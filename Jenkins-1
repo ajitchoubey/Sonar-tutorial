@@ -14,9 +14,10 @@ node {
                 }
             }
         withSonarQubeEnv('Sonarqube1') {
-            sh "dotnet /opt/sonarscanner/SonarScanner.MSBuild.dll begin /k:\"sonarjenkinsintegrationtest\""
-            sh "dotnet build ${DotnetProjectName}"
-            sh "dotnet /opt/sonarscanner/SonarScanner.MSBuild.dll end"
+            bat "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe begin /k:sonarjenkinsintegrationtest"
+            bat 'MSBuild.exe /t:Rebuild'
+            bat "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe end"
+            
         }
      }
 }
