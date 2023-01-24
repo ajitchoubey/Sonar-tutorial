@@ -4,7 +4,6 @@ C:\JFL Project\SonarPOC\Sonar-tutorial\bin\Debug\netcoreapp3.0\ConsoleApp4.runti
 C:\JFL Project\SonarPOC\Sonar-tutorial\bin\Debug\netcoreapp3.0\ConsoleApp4.runtimeconfig.dev.json
 C:\JFL Project\SonarPOC\Sonar-tutorial\bin\Debug\netcoreapp3.0\ConsoleApp4.dll
 C:\JFL Project\SonarPOC\Sonar-tutorial\bin\Debug\netcoreapp3.0\ConsoleApp4.pdb
-C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.0\ConsoleApp4.csproj.AssemblyReference.cache
 C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.0\ConsoleApp4.GeneratedMSBuildEditorConfig.editorconfig
 C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.0\ConsoleApp4.AssemblyInfoInputs.cache
 C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.0\ConsoleApp4.AssemblyInfo.cs

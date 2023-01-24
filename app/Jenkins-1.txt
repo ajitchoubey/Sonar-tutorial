@@ -14,14 +14,13 @@ node {
                 }
             }
             steps {
-                dir ("app") {
                     withSonarQubeEnv('Sonarqube1') {
                         sh "dotnet /opt/sonarscanner/SonarScanner.MSBuild.dll begin /k:\"sonarjenkinsintegrationtest\""
                         sh "dotnet build ${DotnetProjectName}"
                         sh "dotnet /opt/sonarscanner/SonarScanner.MSBuild.dll end"
                     }
                 }
-            }
+            
         }
 
 }
