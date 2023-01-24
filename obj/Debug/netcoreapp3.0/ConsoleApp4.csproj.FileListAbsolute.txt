@@ -11,4 +11,3 @@ C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.0\ConsoleApp4.cspro
 C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.0\ConsoleApp4.dll
 C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.0\ConsoleApp4.pdb
 C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.0\ConsoleApp4.genruntimeconfig.cache
-C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.0\ConsoleApp4.csproj.AssemblyReference.cache
