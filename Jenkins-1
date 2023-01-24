@@ -1,24 +1,17 @@
 node {
   environment{
-    MSBUILD_SQ_SCANNER_HOME = tool name: 'Sonarqube_Scanner_For_DotNetCore3.0', type: 'hudson.plugins.sonar.MsBuildSQRunnerInstallation'
+    MSBUILD_SQ_SCANNER_HOME_1 = tool name: 'MSBuild', type: 'hudson.plugins.sonar.MsBuildSQRunnerInstallation'
     DotnetProjectName='ConsoleApp4'
   }
   stage ('Clean workspace') {
     cleanWs()
 }
   stage ('Build + SonarQube analysis'){
-        agent {
-             docker { 
-                  image 'mcr.microsoft.com/dotnet/core/sdk:3.0'
-                  args '-v ${MSBUILD_SQ_SCANNER_HOME}:/opt/sonarscanner'
-                }
-            }
+        def MSBUILD_SQ_SCANNER_HOME = tool 'MSBuild'
         withSonarQubeEnv('Sonarqube1') {
-            
-            sh "/opt/sonarscanner/SonarScanner.MSBuild.dll begin /k:sonarjenkinsintegrationtest"
-            sh 'MSBuild.exe ${DotnetProjectName} /t:Rebuild'
-            sh "/opt/sonarscanner/SonarScanner.MSBuild.dll end"
-            
+          bat "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe begin /k:myKey"
+          bat 'MSBuild.exe ${DotnetProjectName} /t:Rebuild'
+          bat "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe end"
         }
      }
 }
