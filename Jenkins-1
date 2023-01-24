@@ -3,7 +3,11 @@ node {
     MSBUILD_SQ_SCANNER_HOME = tool 'Sonarqube_Scanner_For_DotNetCore3.0'
     DotnetProjectName='ConsoleApp4'
   }
-  
+  stage ('Clean workspace') {
+  steps {
+    cleanWs()
+  }
+}
   stage ('Build + SonarQube analysis'){
         withSonarQubeEnv('Sonarqube1') {
             sh "dotnet /opt/sonarscanner/SonarScanner.MSBuild.dll begin /k:\"sonarjenkinsintegrationtest\""
