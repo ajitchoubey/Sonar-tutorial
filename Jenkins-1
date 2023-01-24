@@ -4,9 +4,7 @@ node {
     DotnetProjectName='ConsoleApp4'
   }
   stage ('Clean workspace') {
-  steps {
     cleanWs()
-  }
 }
   stage ('Build + SonarQube analysis'){
         withSonarQubeEnv('Sonarqube1') {
