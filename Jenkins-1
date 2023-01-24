@@ -3,9 +3,7 @@ node {
     MSBUILD_SQ_SCANNER_HOME = tool name: 'Sonarqube_Scanner_For_DotNetCore3.0', type: 'hudson.plugins.sonar.MsBuildSQRunnerInstallation'
     DotnetProjectName='ConsoleApp4'
   }
-  stage('SCM') {
-    git 'https://github.com/ajitchoubey/Sonar-tutorial.git'
-  }
+  
   stage ('Build + SonarQube analysis'){
   
       agent {
