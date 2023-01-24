@@ -1,6 +1,6 @@
 node {
   environment{
-    MSBUILD_SQ_SCANNER_HOME = tool 'Sonarqube_Scanner_For_DotNetCore3.0', type 'hudson.plugins.sonar.MsBuildSQRunnerInstallation'
+    MSBUILD_SQ_SCANNER_HOME = tool 'Sonarqube_Scanner_For_DotNetCore3.0'
     DotnetProjectName='ConsoleApp4'
   }
   
