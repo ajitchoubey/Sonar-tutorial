@@ -12,3 +12,17 @@ C:\Users\ajitchoubey\source\repos\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp
 C:\Users\ajitchoubey\source\repos\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.dll
 C:\Users\ajitchoubey\source\repos\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.pdb
 C:\Users\ajitchoubey\source\repos\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.genruntimeconfig.cache
+C:\JFL Project\SonarPOC\Sonar-tutorial\bin\Debug\netcoreapp3.1\ConsoleApp4.exe
+C:\JFL Project\SonarPOC\Sonar-tutorial\bin\Debug\netcoreapp3.1\ConsoleApp4.deps.json
+C:\JFL Project\SonarPOC\Sonar-tutorial\bin\Debug\netcoreapp3.1\ConsoleApp4.runtimeconfig.json
+C:\JFL Project\SonarPOC\Sonar-tutorial\bin\Debug\netcoreapp3.1\ConsoleApp4.runtimeconfig.dev.json
+C:\JFL Project\SonarPOC\Sonar-tutorial\bin\Debug\netcoreapp3.1\ConsoleApp4.dll
+C:\JFL Project\SonarPOC\Sonar-tutorial\bin\Debug\netcoreapp3.1\ConsoleApp4.pdb
+C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.1\ConsoleApp4.csproj.AssemblyReference.cache
+C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.1\ConsoleApp4.GeneratedMSBuildEditorConfig.editorconfig
+C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.1\ConsoleApp4.AssemblyInfoInputs.cache
+C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.1\ConsoleApp4.AssemblyInfo.cs
+C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.1\ConsoleApp4.csproj.CoreCompileInputs.cache
+C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.1\ConsoleApp4.dll
+C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.1\ConsoleApp4.pdb
+C:\JFL Project\SonarPOC\Sonar-tutorial\obj\Debug\netcoreapp3.1\ConsoleApp4.genruntimeconfig.cache
