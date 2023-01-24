@@ -7,12 +7,7 @@ node {
     cleanWs()
 }
   stage ('Build + SonarQube analysis'){
-        agent {
-             docker { 
-                  image 'mcr.microsoft.com/dotnet/core/sdk:3.0'
-                  args '-v ${MSBUILD_SQ_SCANNER_HOME}:/opt/sonarscanner'
-                }
-            }
+        
         withSonarQubeEnv('Sonarqube1') {
             bat "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe begin /k:sonarjenkinsintegrationtest"
             bat 'MSBuild.exe /t:Rebuild'
