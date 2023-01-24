@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "c3fwh8k0mHqYeX3ZqTe0xy7mLqsXw0NPGFUXNSdsTuFw2PeeHRI/mauSJaghAA4Nt8G4yFdfErzPmS46GG22xw==",
+  "dgSpecHash": "rR6G4eHlq33g399nLCwvMmfPFpEigb9NlthRe/OhWWa4GfJHyOwz9dFiefCkKZ1OXu7eYOW4r98FvR5kYAyolw==",
   "success": true,
   "projectFilePath": "C:\\JFL Project\\SonarPOC\\Sonar-tutorial\\ConsoleApp4.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ajitchoubey\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
+    "C:\\Users\\ajitchoubey\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\ajitchoubey\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\ajitchoubey\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\ajitchoubey\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
