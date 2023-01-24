@@ -6,7 +6,8 @@ node {
   stage('SCM') {
     git 'https://github.com/ajitchoubey/Sonar-tutorial.git'
   }
-  stage ('Build + SonarQube analysis')
+  stage ('Build + SonarQube analysis'){
+  
       agent {
              docker { 
                   image 'mcr.microsoft.com/dotnet/core/sdk:3.0'
@@ -20,9 +21,7 @@ node {
                         sh "dotnet /opt/sonarscanner/SonarScanner.MSBuild.dll end"
                     }
                 }
-            
         }
-
 }
 
 
