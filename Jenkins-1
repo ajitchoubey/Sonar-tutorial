@@ -14,9 +14,9 @@ node {
             }
         withSonarQubeEnv('Sonarqube1') {
             def MSBUILD_SQ_SCANNER_HOME = tool 'Sonarqube_Scanner_For_DotNetCore3.0'
-            bat "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe begin /k:sonarjenkinsintegrationtest"
-            bat 'MSBuild.exe ${env.DotnetProjectName} /t:Rebuild'
-            bat "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe end"
+            sh "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe begin /k:sonarjenkinsintegrationtest"
+            sh 'MSBuild.exe ${env.DotnetProjectName} /t:Rebuild'
+            sh "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe end"
             
         }
      }
