@@ -1,15 +1,12 @@
 node {
-  environment{
-    MSBUILD_SQ_SCANNER_HOME_1 = tool name: 'MSBuild', type: 'hudson.plugins.sonar.MsBuildSQRunnerInstallation'
-    DotnetProjectName='ConsoleApp4'
-  }
   stage ('Clean workspace') {
     cleanWs()
 }
   stage ('Build + SonarQube analysis'){
         def MSBUILD_SQ_SCANNER_HOME = tool 'SonarScanner_For_MSBuild'
+        def DotnetProjectName='ConsoleApp4.sln'
         withSonarQubeEnv('SonarServer') {
-          bat " dotnet ${MSBUILD_SQ_SCANNER_HOME}\\SonarScanner.MSBuild.dll begin /k:myKey"
+          bat "dotnet ${MSBUILD_SQ_SCANNER_HOME}\\SonarScanner.MSBuild.dll begin /k:myKey"
           bat "dotnet build ${DotnetProjectName}"
           bat "dotnet ${MSBUILD_SQ_SCANNER_HOME}\\SonarScanner.MSBuild.dll end"
         }
