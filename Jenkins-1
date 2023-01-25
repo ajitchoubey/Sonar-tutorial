@@ -7,11 +7,11 @@ node {
     cleanWs()
 }
   stage ('Build + SonarQube analysis'){
-        def MSBUILD_SQ_SCANNER_HOME = tool 'Sonarqube_Scanner_For_MSBuild'
-        withSonarQubeEnv('Sonarqube1') {
-          sh "${MSBUILD_SQ_SCANNER_HOME}\\Sonar.Scanner.MSBuild.exe begin /k:myKey"
-          sh  'MSBuild.exe /t:Rebuild'
-          sh "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe end"
+        def MSBUILD_SQ_SCANNER_HOME = tool 'SonarScanner_For_MSBuild'
+        withSonarQubeEnv('SonarServer') {
+          bat "${MSBUILD_SQ_SCANNER_HOME}\\Sonar.Scanner.MSBuild.exe begin /k:myKey"
+          bat  "MSBuild.exe ${DotnetProjectName} /t:Rebuild"
+          bat "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe end"
         }
      }
 }
