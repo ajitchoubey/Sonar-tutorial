@@ -103,11 +103,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\JFL Project\\SonarPOC\\Sonar-tutorial\\ConsoleApp4.csproj",
+      "projectUniqueName": "C:\\JFL Project\\MultibranchTest\\Sonar-tutorial\\ConsoleApp4.csproj",
       "projectName": "ConsoleApp4",
-      "projectPath": "C:\\JFL Project\\SonarPOC\\Sonar-tutorial\\ConsoleApp4.csproj",
+      "projectPath": "C:\\JFL Project\\MultibranchTest\\Sonar-tutorial\\ConsoleApp4.csproj",
       "packagesPath": "C:\\Users\\ajitchoubey\\.nuget\\packages\\",
-      "outputPath": "C:\\JFL Project\\SonarPOC\\Sonar-tutorial\\obj\\",
+      "outputPath": "C:\\JFL Project\\MultibranchTest\\Sonar-tutorial\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ajitchoubey\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -147,8 +147,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -175,7 +174,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
       }
     }
   }
