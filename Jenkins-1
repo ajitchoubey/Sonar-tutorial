@@ -2,11 +2,6 @@ node {
   stage ('Clean workspace') {
     cleanWs()
 }
-stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'git_url'
-            }
-        }
   stage ('Build + SonarQube analysis'){
         def MSBUILD_SQ_SCANNER_HOME = tool 'SonarScanner_For_MSBuild'
         
