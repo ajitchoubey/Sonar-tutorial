@@ -16,6 +16,7 @@ namespace ConsoleApp4
             ls.Add("90316943_DPI66268");
             string name;
             string name1;
+            string str1 = "";
 
             foreach (var emp in ls)
             {
