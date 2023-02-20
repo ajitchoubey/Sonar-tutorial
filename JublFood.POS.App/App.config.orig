@@ -4,47 +4,46 @@
 		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
 	</startup>	
 	<connectionStrings>
-		<!--<remove name="StoreDB" />
-    <add name="StoreDB" connectionString="Data Source=.;Database=vision;User Id=import; Password=VlgsXCE+bzlz6ie75uJpng==;" providerName="System.Data.SqlClient" />-->
+		<!--<remove name="" />
+    <add name="StoreDB" connectionString="Data Source=.;Database=abc;User Id=import; Password=xyz;" providerName="System.Data.SqlClient" />-->
 	</connectionStrings>
 	<appSettings>
 
 
 <<<<<<< HEAD
-		<add key="LoginUri" value="http://localhost:9006/api/Employee" />
-		<add key="CustomerAPIUrl" value="http://localhost:9003/api/Customer" />
-		<add key="CatalogAPIUrl" value="http://localhost:9002/v1/api/Catalog/" />
-		<add key="CartAPIUrl" value="http://localhost:9001/Cart/" />
-		<add key="PaymentAPIUrl" value="http://localhost:9005/api/Payment/" />
-		<add key="OrderAPIUrl" value="http://localhost:9004/v1/orderapi/Order/" />
-		<add key="PrintAPIUrl" value="http://localhost:9007/api/Print/" />
+		<add key="LoginUri" value="" />
+		<add key="CustomerAPIUrl" value="" />
+		<add key="CatalogAPIUrl" value=" />
+		<add key="CartAPIUrl" value="" />
+		<add key="PaymentAPIUrl" value="" />
+		<add key="OrderAPIUrl" value="" />
+		<add key="PrintAPIUrl" value="" />
 =======
-		<add key="CatalogAPIUrl" value="http://localhost:9002/v1/api/Catalog/" />
-		<add key="CartAPIUrl" value="http://localhost:5001/Cart/"/>		
-		<add key="OrderAPIUrl" value="http://localhost:5004/v1/orderapi/Order/"/>		
-		<add key="PaymentAPIUrl" value="http://localhost:9005/api/Payment/" />
-		<add key="PrintAPIUrl" value="http://localhost:9007/api/Print/"/>
-		<add key="LoginUri" value="http://localhost:9006/api/Employee"/>
-		<add key="CustomerAPIUrl" value="http://localhost:9003/api/Customer"/>
->>>>>>> 825be901c022e45bbcd08bb26b0fd2ccbb951bb2
+		<add key="CatalogAPIUrl" value="" />
+		<add key="CartAPIUrl" value=""/>		
+		<add key="OrderAPIUrl" value=""/>		
+		<add key="PaymentAPIUrl" value="" />
+		<add key="PrintAPIUrl" value=""/>
+		<add key="LoginUri" value=""/>
+		<add key="CustomerAPIUrl" value=""/>
 
-		<!--<add key="CatalogAPIUrl" value="http://localhost:9002/v1/api/Catalog/" />
-    <add key="CartAPIUrl" value="http://localhost:5001/Cart/"/>
-    <add key="OrderAPIUrl" value="http://localhost:5004/v1/orderapi/Order/"/>
-    <add key="PaymentAPIUrl" value="http://localhost:9005/api/Payment/" />
-    <add key="PrintAPIUrl" value="http://localhost:9007/api/Print/"/>
-    <add key="LoginUri" value="http://localhost:9006/api/Employee"/>
-    <add key="CustomerAPIUrl" value="http://localhost:9003/api/Customer"/>-->
+		<!--<add key="CatalogAPIUrl" value="" />
+    <add key="CartAPIUrl" value=""/>
+    <add key="OrderAPIUrl" value=""/>
+    <add key="PaymentAPIUrl" value="" />
+    <add key="PrintAPIUrl" value=""/>
+    <add key="LoginUri" value=""/>
+    <add key="CustomerAPIUrl" value=""/>-->
 	  
-    <!--<add key="CatalogAPIUrl" value="https://localhost:44369/v1/api/Catalog/" />-->
-    <!--<add key="CartAPIUrl" value="https://localhost:44319/Cart/" />-->
-    <!--<add key="CustomerAPIUrl" value="http://172.40.22.121:9003/api/Customer" />-->
-    <!--<add key="LoginUri" value="http://localhost:5003/api/Employee" />-->
-    <!--<add key="OrderAPIUrl" value="http://localhost:5004/v1/orderapi/Order/" />-->
-    <!--<add key="PaymentAPIUrl" value="http://localhost:5005/api/Payment/" />-->
-    <!--<add key="PrintAPIUrl" value="https://localhost:44306/api/Print/" />-->
+    <!--<add key="CatalogAPIUrl" value="" />-->
+    <!--<add key="CartAPIUrl" value="" />-->
+    <!--<add key="CustomerAPIUrl" value="" />-->
+    <!--<add key="LoginUri" value="" />-->
+    <!--<add key="OrderAPIUrl" value="" />-->
+    <!--<add key="PaymentAPIUrl" value="" />-->
+    <!--<add key="PrintAPIUrl" value="" />-->
 	  
-    <add key="path" value="C:\\Program Files\\Hustle\\" />
+    <add key="path" value="" />
     <add key="ClientSettingsProvider.ServiceUri" value="" />
   </appSettings>
   <runtime>
