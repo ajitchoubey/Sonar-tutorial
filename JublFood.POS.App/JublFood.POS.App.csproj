@@ -1,0 +1,965 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3192E20-9BE7-4B20-8F11-64B5C59B8C8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JublFood.POS.App</RootNamespace>
+    <AssemblyName>JublFood.POS.App</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\manish\Jublfood.Hustle\WebSite\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3FDAA4D0942A97A3660F1FBB1ABD6AD058C80819</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>JublFood.POS.App_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>185.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Jublfood.AppLogger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Jublfood.AppLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="JublFood.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\JublFood.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="JublFood.Settings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\JublFood.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationBlocks.Data.2.0.0\lib\net45\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PasswordSecurity">
+      <HintPath>DLL\PasswordSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tamir.SharpSSH, Version=1.1.1.13, Culture=neutral">
+      <HintPath>..\packages\Tamir.SharpSSH.1.1.1.13\lib\Tamir.SharpSSH.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="VersionControl, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\VersionControl.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\APILayer.cs" />
+    <Compile Include="BusinessLayer\CartFunctions.cs" />
+    <Compile Include="BusinessLayer\ComboFunctions.cs" />
+    <Compile Include="BusinessLayer\CouponFunctions.cs" />
+    <Compile Include="BusinessLayer\CustomerFunction.cs" />
+    <Compile Include="BusinessLayer\EmployeeFunctions.cs" />
+    <Compile Include="BusinessLayer\OrderCompleteFunctions.cs" />
+    <Compile Include="BusinessLayer\OrderFunctions.cs" />
+    <Compile Include="BusinessLayer\PaymentFunctions.cs" />
+    <Compile Include="BusinessLayer\PreDocker.cs" />
+    <Compile Include="BusinessLayer\PrintFunctions.cs" />
+    <Compile Include="BusinessLayer\SplashThread.cs" />
+    <Compile Include="BusinessLayer\UserFunctions.cs" />
+    <Compile Include="Cache\MemoryStore.cs" />
+    <Compile Include="Cache\Session.cs" />
+    <Compile Include="Cache\SystemSettings.cs" />
+    <Compile Include="Class\CashDrawer.cs" />
+    <Compile Include="Class\Common.cs" />
+    <Compile Include="Class\Constants.cs" />
+    <Compile Include="Class\CustomerKeyBoardInfo.cs" />
+    <Compile Include="Class\LanguageConstant.cs" />
+    <Compile Include="Class\MessageConstant.cs" />
+    <Compile Include="Class\UserTypes.cs" />
+    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomMessageBox.Designer.cs">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlowDocument.cs" />
+    <Compile Include="frmCapture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapture.Designer.cs">
+      <DependentUpon>frmCapture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCartOnHold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCartOnHold.Designer.cs">
+      <DependentUpon>frmCartOnHold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCashDrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCashDrop.Designer.cs">
+      <DependentUpon>frmCashDrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCashRegister.cs">
+		<SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCashRegister.Designer.cs">
+      <DependentUpon>frmCashRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCredit.Designer.cs">
+      <DependentUpon>frmCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDebit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDebit.Designer.cs">
+      <DependentUpon>frmDebit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetermineOrderDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetermineOrderDate.Designer.cs">
+      <DependentUpon>frmDetermineOrderDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGSTEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGSTEntry.Designer.cs">
+      <DependentUpon>frmGSTEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLockUnlockCashDrawer.cs" >
+		<SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLockUnlockCashDrawer.Designer.cs">
+      <DependentUpon>frmLockUnlockCashDrawer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemake.Designer.cs">
+      <DependentUpon>frmRemake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistory.Designer.cs">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeyBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeyBoard.Designer.cs">
+      <DependentUpon>frmKeyBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeyBoardNumeric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeyBoardNumeric.Designer.cs">
+      <DependentUpon>frmKeyBoardNumeric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModify.Designer.cs">
+      <DependentUpon>frmModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrder.Designer.cs">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword.Designer.cs">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPasswordChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPasswordChange.Designer.cs">
+      <DependentUpon>frmPasswordChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayment.designer.cs">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReason.Designer.cs">
+      <DependentUpon>frmReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch.Designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpecials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpecials.Designer.cs">
+      <DependentUpon>frmSpecials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTaxPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaxPrompt.Designer.cs">
+      <DependentUpon>frmTaxPrompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmToppings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmToppings.Designer.cs">
+      <DependentUpon>frmToppings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpsell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpsell.Designer.cs">
+      <DependentUpon>frmUpsell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimeClock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimeClock.Designer.cs">
+      <DependentUpon>frmTimeClock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimedOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimedOrders.Designer.cs">
+      <DependentUpon>frmTimedOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecap.Designer.cs">
+      <DependentUpon>frmRecap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpsellCombo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpsellCombo.Designer.cs">
+      <DependentUpon>frmUpsellCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpsellPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpsellPrompt.Designer.cs">
+      <DependentUpon>frmUpsellPrompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPOS.Designer.cs">
+      <DependentUpon>MDIPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cart\Cart.cs" />
+    <Compile Include="Models\Cart\CartHeader.cs" />
+    <Compile Include="Models\Cart\CartItem.cs" />
+    <Compile Include="Models\Cart\CartOnHoldRequest.cs" />
+    <Compile Include="Models\Cart\CartOnHoldResponse.cs" />
+    <Compile Include="Models\Cart\CartResponse.cs" />
+    <Compile Include="Models\Cart\ItemAttribute.cs" />
+    <Compile Include="Models\Cart\ItemAttributeGroup.cs" />
+    <Compile Include="Models\Cart\ItemCombo.cs" />
+    <Compile Include="Models\Cart\ItemGiftCard.cs" />
+    <Compile Include="Models\Cart\ItemOption.cs" />
+    <Compile Include="Models\Cart\ItemOptionGroup.cs" />
+    <Compile Include="Models\Cart\ItemReason.cs" />
+    <Compile Include="Models\Cart\ItemSpecialityPizza.cs" />
+    <Compile Include="Models\Cart\ItemSpecialtyPizza.cs" />
+    <Compile Include="Models\Cart\ItemUDT.cs" />
+    <Compile Include="Models\Cart\ItemwiseUpsellDatawithType.cs" />
+    <Compile Include="Models\Cart\ItemwiseUpsellPromptRow.cs" />
+    <Compile Include="Models\Cart\OrderAdditionalCharge.cs" />
+    <Compile Include="Models\Catalog\CashDrawerInfoDto.cs" />
+    <Compile Include="Models\Catalog\CashDrawerInfoResponse.cs" />
+    <Compile Include="Models\Catalog\CashDrorStatusRequest.cs" />
+    <Compile Include="Models\Catalog\CatalogMenuItemSizesStatusResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogMenuItemStatusResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogAddressTypes.cs" />
+    <Compile Include="Models\Catalog\CatalogAddressTypesResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogAllButtonText.cs" />
+    <Compile Include="Models\Catalog\CatalogAllButtonTextResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogBusinessUnit.cs" />
+    <Compile Include="Models\Catalog\CatalogBusinessUnitResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogControlPropeties.cs" />
+    <Compile Include="Models\Catalog\CatalogControlPropetiesResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogControlText.cs" />
+    <Compile Include="Models\Catalog\CatalogControlTextResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogSourceName.cs" />
+    <Compile Include="Models\Catalog\CatalogSourceNameResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogItemwiseUpsell.cs" />
+    <Compile Include="Models\Catalog\CatalogUpsellAddTopping.cs" />
+    <Compile Include="Models\Catalog\CatalogUpsellCombo.cs" />
+    <Compile Include="Models\Catalog\CatalogUpsellDataResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogUpsellExcludeItem.cs" />
+    <Compile Include="Models\Catalog\CatalogUpsellNewItem.cs" />
+    <Compile Include="Models\Catalog\CatalogUpsellSizeChange.cs" />
+    <Compile Include="Models\Catalog\OrderType.cs" />
+    <Compile Include="Models\Cart\PizzaTopping.cs" />
+    <Compile Include="Models\Cart\Toppings.cs" />
+    <Compile Include="Models\Cart\UpdateCartItemBasedOnToppingRequest.cs" />
+    <Compile Include="Models\Catalog\CatalogCartCaptions.cs" />
+    <Compile Include="Models\Catalog\CatalogCouponsResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogCurrencyDenominationResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogDefaultToppings.cs" />
+    <Compile Include="Models\Catalog\CatalogDefaultToppingsResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogDelayedOrder.cs" />
+    <Compile Include="Models\Catalog\CatalogItems.cs" />
+    <Compile Include="Models\Catalog\CatalogItemsRequest.cs" />
+    <Compile Include="Models\Catalog\CatalogMenuCategory.cs" />
+    <Compile Include="Models\Catalog\CatalogMenuCategoryResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogMenuItemEDVCoupons.cs" />
+    <Compile Include="Models\Catalog\CatalogMenuItemEDVCouponsResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogMenuItems.cs" />
+    <Compile Include="Models\Catalog\CatalogMenuItemSizes.cs" />
+    <Compile Include="Models\Catalog\CatalogMenuItemSizesResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogMenuItemsResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogMenuTypes.cs" />
+    <Compile Include="Models\Catalog\CatalogMenuTypesResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogOptionGroups.cs" />
+    <Compile Include="Models\Catalog\CatalogOrderPayTypeCodeResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogOrderTypes.cs" />
+    <Compile Include="Models\Catalog\CatalogOrderTypesResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogPOSComboMealItemsForButtonsResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogPOSComboMealItemSizesResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogPOSComboMealItemsResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogPOSMenuItemUpsell.cs" />
+    <Compile Include="Models\Catalog\CatalogPOSMenuItemUpsellDisItem.cs" />
+    <Compile Include="Models\Catalog\CatalogPOSMenuItemUpsellDisItemResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogPOSMenuItemUpsellResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogReasonGroupResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogReasonsResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogSpecialtyPizzas.cs" />
+    <Compile Include="Models\Catalog\CatalogSpecialtyPizzasResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogText.cs" />
+    <Compile Include="Models\Catalog\CatalogTextResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogToppings.cs" />
+    <Compile Include="Models\Catalog\CatalogUpsellMenuCouponResponse.cs" />
+    <Compile Include="Models\Catalog\CatalogUpsellMenuResponse.cs" />
+    <Compile Include="Models\Catalog\CatlogToppingDescriptonCode.cs" />
+    <Compile Include="Models\Catalog\OrderTypeResponse.cs" />
+    <Compile Include="Models\Catalog\Specials.cs" />
+    <Compile Include="Models\Catalog\UpsellReminder.cs" />
+    <Compile Include="Models\Catalog\CombosForUpsellResponse.cs" />
+    <Compile Include="Models\Customer\Customer.cs" />
+    <Compile Include="Models\Customer\CustomerLookUpRequest.cs" />
+    <Compile Include="Models\Customer\CustomerLookUpResponse.cs" />
+    <Compile Include="Models\Customer\CustomerReqField.cs" />
+    <Compile Include="Models\Customer\DeleteCallRequest.cs" />
+    <Compile Include="Models\Customer\GetAllCitiesResponse.cs" />
+    <Compile Include="Models\Customer\GetAllCustomersRequest.cs" />
+    <Compile Include="Models\Customer\GetCallerIDLinesResponse.cs" />
+    <Compile Include="Models\Customer\GetCallerIDLogRequest.cs" />
+    <Compile Include="Models\Customer\GetCallerIDLogResponse.cs" />
+    <Compile Include="Models\Customer\GetCustomerProfileRequest.cs" />
+    <Compile Include="Models\Customer\GetCustomerProfileResponse.cs" />
+    <Compile Include="Models\Customer\SaveCustomerRequest.cs" />
+    <Compile Include="Models\Customer\SaveCustomerResponse.cs" />
+    <Compile Include="Models\Customer\StreetLookUpRequest.cs" />
+    <Compile Include="Models\Customer\StreetLookUpResponse.cs" />
+    <Compile Include="Models\Employee\CashDropRequest.cs" />
+    <Compile Include="Models\Employee\CheckEmployeeRequest.cs" />
+    <Compile Include="Models\Employee\CheckBiometricDataRequest.cs" />
+    <Compile Include="Models\Employee\CheckBiometricDataResponse.cs" />
+    <Compile Include="Models\Employee\CheckRecordRequest.cs" />
+    <Compile Include="Models\Employee\ClockInDriverRequest.cs" />
+    <Compile Include="Models\Employee\ClockInMagCardRequest.cs" />
+    <Compile Include="Models\Employee\EmployeeLoginRequest.cs" />
+    <Compile Include="Models\Employee\EmployeeLoginResponse.cs" />
+    <Compile Include="Models\Employee\EmployeeOrderTypes.cs" />
+    <Compile Include="Models\Employee\EmployeeOrderTypesResponse.cs" />
+    <Compile Include="Models\Employee\EmployeeResponse.cs" />
+    <Compile Include="Models\Employee\EmployeeSpecialAccessRequest.cs" />
+    <Compile Include="Models\Employee\GetEmployeeCodeRequest.cs" />
+    <Compile Include="Models\Employee\GetEmployeeCodeResponse.cs" />
+    <Compile Include="Models\Employee\GetEmployeeDetailsResponse.cs" />
+    <Compile Include="Models\Employee\GetEmployeeInfoResponse.cs" />
+    <Compile Include="Models\Employee\GetEmployeePositionResponse.cs" />
+    <Compile Include="Models\Employee\GetTextRequest.cs" />
+    <Compile Include="Models\Employee\GetWorkstationDeviceOptionsResponse.cs" />
+    <Compile Include="Models\Employee\ResetPasswordRequest.cs" />
+    <Compile Include="Models\Employee\ResetPasswordResponse.cs" />
+    <Compile Include="Models\Employee\TimeClockClockInOutRequest.cs" />
+    <Compile Include="Models\Employee\TimeClockConfirmationRequest.cs" />
+    <Compile Include="Models\Employee\TimeClockConfirmationResponse.cs" />
+    <Compile Include="Models\Employee\TimeClockGetEmpClockedInResponse.cs" />
+    <Compile Include="Models\Employee\UpdateClockInAndOutDataBiometricRequest.cs" />
+    <Compile Include="Models\Employee\ValidateShiftOverlapsRequest.cs" />
+    <Compile Include="Models\Order\AbandonOrderResponse.cs" />
+    <Compile Include="Models\Order\CashDrawerLockUnlockRequest.cs" />
+    <Compile Include="Models\Order\CashDrawerReason.cs" />
+    <Compile Include="Models\Order\CustomerOrderRemakeResponse.cs" />
+    <Compile Include="Models\Order\CustomerOrderHistoryResponse.cs" />
+    <Compile Include="Models\Order\GetOrderRequest.cs" />
+    <Compile Include="Models\Order\GetOrderResponse.cs" />
+    <Compile Include="Models\Order\GetOrderTypeOptionsResponse.cs" />
+    <Compile Include="Models\Order\InsertAuditTrailRequest.cs" />
+    <Compile Include="Models\Order\ItemwiseUpsellHistory.cs" />
+    <Compile Include="Models\Order\OrderCreditCard.cs" />
+    <Compile Include="Models\Order\OrderGiftCard.cs" />
+    <Compile Include="Models\Order\OrderInfoResponse.cs" />
+    <Compile Include="Models\Order\OrderLineCombo.cs" />
+    <Compile Include="Models\Order\OrderPayment.cs" />
+    <Compile Include="Models\Order\OrderReason.cs" />
+    <Compile Include="Models\Order\OrderReqField.cs" />
+    <Compile Include="Models\Order\OrderRequest.cs" />
+    <Compile Include="Models\Order\OrderResponse.cs" />
+    <Compile Include="Models\Order\OrderUDT.cs" />
+    <Compile Include="Models\Order\OriginalOrderInfo.cs" />
+    <Compile Include="Models\Order\Request_RemovecardHistory.cs" />
+    <Compile Include="Models\Order\TicketFields.cs" />
+    <Compile Include="Models\Order\UpdateOrderStatusRequest.cs" />
+    <Compile Include="Models\Payment\CreditCardTrackingRequest.cs" />
+    <Compile Include="Models\Payment\CreditCardTrackingResponse.cs" />
+    <Compile Include="Models\Payment\GetPaymentResponse.cs" />
+    <Compile Include="Models\Payment\PaymentRequest.cs" />
+    <Compile Include="Models\Payment\ResponsePayment.cs" />
+    <Compile Include="Models\Printing\GetPrinterSettingsResponse.cs" />
+    <Compile Include="Models\Printing\PrintAbandedOrderRequest.cs" />
+    <Compile Include="Models\Printing\PrintCashDropRequest.cs" />
+    <Compile Include="Models\Printing\PrintOrderReceiptGeneralRequest.cs" />
+    <Compile Include="Models\Printing\PrintOrderReceiptRequest.cs" />
+    <Compile Include="Models\Printing\PrintOrderReceiptResponse.cs" />
+    <Compile Include="Models\Printing\PrintTimeClockConfirmationRequest.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Amount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Amount.Designer.cs">
+      <DependentUpon>UC_Amount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_CustomerOrderBottomMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_CustomerOrderBottomMenu.Designer.cs">
+      <DependentUpon>UC_CustomerOrderBottomMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Customer_OrderMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Customer_OrderMenu.Designer.cs">
+      <DependentUpon>UC_Customer_OrderMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Customer_order_Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Customer_order_Header.Designer.cs">
+      <DependentUpon>UC_Customer_order_Header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_FunctionList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_FunctionList.Designer.cs">
+      <DependentUpon>UC_FunctionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_InformationList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_InformationList.Designer.cs">
+      <DependentUpon>UC_InformationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_KeyBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_KeyBoard.Designer.cs">
+      <DependentUpon>UC_KeyBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_KeyBoardNumeric.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_KeyBoardNumeric.Designer.cs">
+      <DependentUpon>UC_KeyBoardNumeric.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmCapture.resx">
+      <DependentUpon>frmCapture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCartOnHold.resx">
+      <DependentUpon>frmCartOnHold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCashDrop.resx">
+      <DependentUpon>frmCashDrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCashRegister.resx">
+      <DependentUpon>frmCashRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCredit.resx">
+      <DependentUpon>frmCredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDebit.resx">
+      <DependentUpon>frmDebit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetermineOrderDate.resx">
+      <DependentUpon>frmDetermineOrderDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGSTEntry.resx">
+      <DependentUpon>frmGSTEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLockUnlockCashDrawer.resx">
+      <DependentUpon>frmLockUnlockCashDrawer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemake.resx">
+      <DependentUpon>frmRemake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistory.resx">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKeyBoard.resx">
+      <DependentUpon>frmKeyBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKeyBoardNumeric.resx">
+      <DependentUpon>frmKeyBoardNumeric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModify.resx">
+      <DependentUpon>frmModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrder.resx">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassword.resx">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPasswordChange.resx">
+      <DependentUpon>frmPasswordChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReason.resx">
+      <DependentUpon>frmReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.resx">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpecials.resx">
+      <DependentUpon>frmSpecials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaxPrompt.resx">
+      <DependentUpon>frmTaxPrompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmToppings.resx">
+      <DependentUpon>frmToppings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpsell.resx">
+      <DependentUpon>frmUpsell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeClock.resx">
+      <DependentUpon>frmTimeClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimedOrders.resx">
+      <DependentUpon>frmTimedOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecap.resx">
+      <DependentUpon>frmRecap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpsellCombo.resx">
+      <DependentUpon>frmUpsellCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpsellPrompt.resx">
+      <DependentUpon>frmUpsellPrompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPOS.resx">
+      <DependentUpon>MDIPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Amount.resx">
+      <DependentUpon>UC_Amount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_CustomerOrderBottomMenu.resx">
+      <DependentUpon>UC_CustomerOrderBottomMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Customer_OrderMenu.resx">
+      <DependentUpon>UC_Customer_OrderMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Customer_order_Header.resx">
+      <DependentUpon>UC_Customer_order_Header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_FunctionList.resx">
+      <DependentUpon>UC_FunctionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_InformationList.resx">
+      <DependentUpon>UC_InformationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_KeyBoard.resx">
+      <DependentUpon>UC_KeyBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_KeyBoardNumeric.resx">
+      <DependentUpon>UC_KeyBoardNumeric.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="log4net.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\49.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\198.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\199.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\200.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\171.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\31.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\34.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\62.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\63.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\6.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\112.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\103.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\110.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\Cart.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\skip.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\190.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\220.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\98.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\202.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\43.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\33.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\75.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\42.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\52.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\55.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\28.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\37.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\108.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\50.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\82.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\180.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\193.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\59.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\96.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\26.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\87.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\36.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\104.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\157.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\9.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\173.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\221.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\117.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\118.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\163.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\119.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\164.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\123.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\35.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\175.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\92.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\25.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_92.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\201.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\106.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\107.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\97.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\121.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ICON\Sodexo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="185.ico" />
+    <Content Include="bin\Debug\Images\ICON\fingerprint_1.png" />
+    <None Include="Resources\Role.png" />
+    <None Include="Resources\Role.bmp" />
+    <None Include="Resources\Veg.png" />
+    <None Include="Resources\NonVeg.png" />
+    <None Include="Resources\veg.bmp" />
+    <None Include="Images\ICON\msgbox.GIF" />
+    <Content Include="Microsoft.Extensions.Configuration.Json.dll" />
+    <Content Include="ptycnfg.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\14.ico" />
+    <Content Include="Resources\fingerprint_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

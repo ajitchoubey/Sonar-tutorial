@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+  </startup>
+  <connectionStrings>
+    <!--<add name="Conn" connectionString="Data Source=172.40.33.23;Database=Vision_New;User Id=import; Password=import;" providerName="System.Data.SqlClient"/>-->
+    <add name="Conn" connectionString="Data Source=.;Database=Vision;User Id=import; Password=import;" providerName="System.Data.SqlClient" />
+    <remove name="StoreDB" />
+    <add name="StoreDB" connectionString="Data Source=.;Database=Vision;User Id=import; Password=import;" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <appSettings>
+    <add key="LoginUri" value="https://localhost:44335/api/Employee" />
+    <add key="CustomerAPIUrl" value="https://localhost:44370/api/Customer" />
+    <add key="CatalogAPIUrl" value="https://localhost:44369/v1/api/Catalog/" />
+    <add key="CartAPIUrl" value="https://localhost:44319/Cart/" />
+    <add key="PaymentAPIUrl" value="https://localhost:44397/api/Payment/" />
+    <add key="OrderAPIUrl" value="https://localhost:44391/v1/orderapi/Order/" />
+    <!--<add key="LoginUri" value="http://localhost:9006/api/Employee" />    
+    <add key="CustomerAPIUrl" value="http://localhost:9003/api/Customer" />
+    <add key="CatalogAPIUrl" value="http://localhost:9002/v1/api/Catalog/" />    
+    <add key="CartAPIUrl" value="http://localhost:9001/Cart/" />    
+    <add key="PaymentAPIUrl" value="http://localhost:9005/api/Payment/" />
+    <add key="OrderAPIUrl" value="http://localhost:9004/v1/orderapi/Order/" />-->
+    <!--<add key="LoginUri" value="http://172.40.22.121:9006/api/Employee" />
+    <add key="CustomerAPIUrl" value="http://172.40.22.121:9003/api/Customer" />
+    <add key="CatalogAPIUrl" value="http://172.40.22.121:9002/v1/api/Catalog/" />
+    <add key="CartAPIUrl" value="http://172.40.22.121:9001/Cart/" />
+    <add key="PaymentAPIUrl" value="http://172.40.22.121:9005/api/Payment/" />
+    <add key="OrderAPIUrl" value="http://172.40.22.121:9004/v1/orderapi/Order/" />-->
+    <add key="path" value="C:\\Program Files\\Hustle\\" />
+    <add key="blnRequirePassword" value="true" />
+  </appSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Numerics.Vectors" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.4.0" newVersion="4.1.4.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" culture="neutral" publicKeyToken="b03f5f7f11d50a3a" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.6.0" newVersion="4.0.6.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Buffers" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.3.0" newVersion="4.0.3.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Memory" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.1" newVersion="4.0.1.1" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.ValueTuple" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.3.0" newVersion="4.0.3.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-10.0.0.0" newVersion="10.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.Primitives" publicKeyToken="adb9793829ddae60" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.1.0" newVersion="3.1.1.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.Configuration.Abstractions" publicKeyToken="adb9793829ddae60" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.1.0" newVersion="3.1.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.Configuration" publicKeyToken="adb9793829ddae60" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.1.0" newVersion="3.1.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

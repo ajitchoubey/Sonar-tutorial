@@ -1,0 +1,55 @@
+2020-03-19 16:45:59,793 [1] DEBUG QwikcilverPos - Program: PerformTransactions=> Arguments Received : 39946 
+2020-03-19 16:46:00,198 [1] DEBUG QwikcilverPos - Program: StartTimer=> Timer Started :  
+2020-03-19 16:46:00,329 [1] DEBUG QwikcilverPos - QC_IntegrationUtility : LoadPaymentDll => Loading payment DLL Started 
+2020-03-19 16:46:01,969 [1] DEBUG QwikcilverPos - QC_IntegrationUtility : LoadPaymentDll => Payment DLL Output : Location_Code - DPI66683
+Transaction_ID - 39946
+Credit_Card_ID - 18
+PlutusId - 
+Transaction_Status - 100
+Phone_Number - 9999999999
+Phone_Ext - 
+Name - MALIK
+Company_Name - 
+Computer_Name - 
+Street_Number - 
+Street_Code - 1582
+Cross_Street_Code - 1582
+Suite - 
+Address_Line_2 - 
+Address_Line_3 - 
+Address_Line_4 - 
+Mailing_Address - 
+Postal_Code - 201301
+Transaction_Date - 3/19/2020 4:45:56 PM
+Order_Type_Code - I
+Pay_Now - False
+AddedBy - 99999
+Order_Amount - 173.2400
+Workstation_ID - 0
+Order_Taker_ID - 99999
+Order_Number - 0
+Transaction_Time - 
+ExtraFields - System.Collections.Generic.Dictionary`2[System.String,System.String]
+Message - 
+ExtraData - 
+CancelAmount - 
+RefundAmount - 
+ 
+2020-03-19 16:46:03,765 [1] ERROR QwikcilverPos - QC_IntegrationUtility : SaveParamDownloadDataToFile => Could not find a part of the path 'C:\Program Files (x86)\Hustle\QC\GCWebPOSParams.txt'.    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Qwikcilver_Dominos_POS.QC_IntegrationUtility.SaveParamDownloadDataToFile(String FileName, Hashtable paramDownloadData) 
+2020-03-19 16:46:05,482 [1] DEBUG QwikcilverPos - RedeemForm: Redeem_Load=> Redeem Form Load started 
+2020-03-19 16:46:05,496 [1] DEBUG QwikcilverPos - RedeemForm: SetValues=> Setting Request Parameters to Form Fields 
+2020-03-19 16:46:05,556 [1] ERROR QwikcilverPos - QC_IntegrationUtility : GetParamDownloadData => Could not find a part of the path 'C:\Program Files (x86)\Hustle\QC\GCWebPOSParams.txt'.    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path, Encoding encoding)
+   at Qwikcilver_Dominos_POS.QC_IntegrationUtility.GetParamDownloadData(String paramDownloadFilePath) 
+2020-03-19 16:46:08,388 [1] ERROR QwikcilverPos - RedeemForm : cancelBtn_Click => RemainingAmt=173.24 
+2020-03-19 16:46:08,495 [1] INFO  QwikcilverPos - QC_IntegrationUtility : DoRedeem => Redemption Status : Failure  Redemption Message : Transaction Cancelled 
+2020-03-19 16:46:08,623 [1] DEBUG QwikcilverPos - QC_IntegrationUtility : ClosePaymentDll => Payment DLL Input : Message : Transaction Cancelled , Status : Failure 

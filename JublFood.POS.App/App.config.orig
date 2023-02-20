@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<startup>
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+	</startup>	
+	<connectionStrings>
+		<!--<remove name="StoreDB" />
+    <add name="StoreDB" connectionString="Data Source=.;Database=vision;User Id=import; Password=VlgsXCE+bzlz6ie75uJpng==;" providerName="System.Data.SqlClient" />-->
+	</connectionStrings>
+	<appSettings>
+
+
+<<<<<<< HEAD
+		<add key="LoginUri" value="http://localhost:9006/api/Employee" />
+		<add key="CustomerAPIUrl" value="http://localhost:9003/api/Customer" />
+		<add key="CatalogAPIUrl" value="http://localhost:9002/v1/api/Catalog/" />
+		<add key="CartAPIUrl" value="http://localhost:9001/Cart/" />
+		<add key="PaymentAPIUrl" value="http://localhost:9005/api/Payment/" />
+		<add key="OrderAPIUrl" value="http://localhost:9004/v1/orderapi/Order/" />
+		<add key="PrintAPIUrl" value="http://localhost:9007/api/Print/" />
+=======
+		<add key="CatalogAPIUrl" value="http://localhost:9002/v1/api/Catalog/" />
+		<add key="CartAPIUrl" value="http://localhost:5001/Cart/"/>		
+		<add key="OrderAPIUrl" value="http://localhost:5004/v1/orderapi/Order/"/>		
+		<add key="PaymentAPIUrl" value="http://localhost:9005/api/Payment/" />
+		<add key="PrintAPIUrl" value="http://localhost:9007/api/Print/"/>
+		<add key="LoginUri" value="http://localhost:9006/api/Employee"/>
+		<add key="CustomerAPIUrl" value="http://localhost:9003/api/Customer"/>
+>>>>>>> 825be901c022e45bbcd08bb26b0fd2ccbb951bb2
+
+		<!--<add key="CatalogAPIUrl" value="http://localhost:9002/v1/api/Catalog/" />
+    <add key="CartAPIUrl" value="http://localhost:5001/Cart/"/>
+    <add key="OrderAPIUrl" value="http://localhost:5004/v1/orderapi/Order/"/>
+    <add key="PaymentAPIUrl" value="http://localhost:9005/api/Payment/" />
+    <add key="PrintAPIUrl" value="http://localhost:9007/api/Print/"/>
+    <add key="LoginUri" value="http://localhost:9006/api/Employee"/>
+    <add key="CustomerAPIUrl" value="http://localhost:9003/api/Customer"/>-->
+	  
+    <!--<add key="CatalogAPIUrl" value="https://localhost:44369/v1/api/Catalog/" />-->
+    <!--<add key="CartAPIUrl" value="https://localhost:44319/Cart/" />-->
+    <!--<add key="CustomerAPIUrl" value="http://172.40.22.121:9003/api/Customer" />-->
+    <!--<add key="LoginUri" value="http://localhost:5003/api/Employee" />-->
+    <!--<add key="OrderAPIUrl" value="http://localhost:5004/v1/orderapi/Order/" />-->
+    <!--<add key="PaymentAPIUrl" value="http://localhost:5005/api/Payment/" />-->
+    <!--<add key="PrintAPIUrl" value="https://localhost:44306/api/Print/" />-->
+	  
+    <add key="path" value="C:\\Program Files\\Hustle\\" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Numerics.Vectors" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.4.0" newVersion="4.1.4.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.5.0" newVersion="4.0.5.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Buffers" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.3.0" newVersion="4.0.3.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Memory" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.1" newVersion="4.0.1.1" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.ValueTuple" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.3.0" newVersion="4.0.3.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.Configuration.Abstractions" publicKeyToken="adb9793829ddae60" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.1.0" newVersion="3.1.1.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.Primitives" publicKeyToken="adb9793829ddae60" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.1.0" newVersion="3.1.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>
+
