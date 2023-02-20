@@ -56,7 +56,8 @@ namespace ConsoleApp4
             {
                 Console.WriteLine(p);
             }
-            Console.ReadLine();
+            Console.WriteLine(System.DateTime.Now);
+            //Console.ReadLine();
         }
     }
 }
