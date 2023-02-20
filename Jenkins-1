@@ -6,8 +6,8 @@ node {
         def MSBUILD_SQ_SCANNER_HOME = tool 'SonarScanner_For_MSBuild'
         
         withSonarQubeEnv('SonarServer') {
-          bat "dotnet ${MSBUILD_SQ_SCANNER_HOME}\\SonarScanner.MSBuild.dll begin /k:SonarJenkinsIntegrationDemo1"
-          bat 'dotnet build "C:/JFL Project/SonarPOC/Sonar-tutorial/ConsoleApp4.sln"'
+          bat "dotnet ${MSBUILD_SQ_SCANNER_HOME}\\SonarScanner.MSBuild.dll begin /k:POSDemo"
+          bat 'dotnet build "C:/JFL Project/POSDemo/Sonar-tutorial/JublFood.POS.App.sln"'
           bat "dotnet ${MSBUILD_SQ_SCANNER_HOME}\\SonarScanner.MSBuild.dll end"
         }
      }
