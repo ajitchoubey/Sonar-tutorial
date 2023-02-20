@@ -167,3 +167,4 @@ C:\JFL Project\Framework-Sonar\Sonar-tutorial\obj\Debug\WebApplication1.csproj.C
 C:\JFL Project\Framework-Sonar\Sonar-tutorial\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\JFL Project\Framework-Sonar\Sonar-tutorial\obj\Debug\WebApplication1.dll
 C:\JFL Project\Framework-Sonar\Sonar-tutorial\obj\Debug\WebApplication1.pdb
+C:\JFL Project\Framework-Sonar\Sonar-tutorial\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
