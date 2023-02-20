@@ -6,7 +6,7 @@
       "tool": {
         "name": "Microsoft (R) Visual C# Compiler",
         "version": "4.4.0.0",
-        "fileVersion": "4.4.0-6.22580.4 (d7a61210)",
+        "fileVersion": "4.4.0-6.23068.5 (0760f14e)",
         "semanticVersion": "4.4.0",
         "language": "en-US"
       },
@@ -87,6 +87,27 @@
                   "startColumn": 17,
                   "endLine": 50,
                   "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/JFL%20Project/SonarPOC/Sonar-tutorial/Program.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 13,
+                  "endLine": 60,
+                  "endColumn": 34
                 }
               }
             }
@@ -240,30 +261,6 @@
               "MainSourceScope",
               "TestSourceScope",
               "SonarWay"
-            ]
-          }
-        },
-        "S1481": {
-          "id": "S1481",
-          "shortDescription": "Unused local variables should be removed",
-          "fullDescription": "If a local variable is declared but not used, it is dead code and should be removed. Doing so will improve maintainability because developers will not wonder what the variable is used for.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
-          "properties": {
-            "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
-              "SonarWay"
-            ]
-          }
-        }
-      }
-    }
-  ]
-}          "SonarWay"
             ]
           }
         },
