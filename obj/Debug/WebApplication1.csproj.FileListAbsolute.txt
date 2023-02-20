@@ -163,7 +163,6 @@ C:\JFL Project\Framework-Sonar\Sonar-tutorial\bin\System.Web.WebPages.Deployment
 C:\JFL Project\Framework-Sonar\Sonar-tutorial\bin\System.Web.WebPages.Razor.xml
 C:\JFL Project\Framework-Sonar\Sonar-tutorial\bin\Antlr3.Runtime.pdb
 C:\JFL Project\Framework-Sonar\Sonar-tutorial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\JFL Project\Framework-Sonar\Sonar-tutorial\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
 C:\JFL Project\Framework-Sonar\Sonar-tutorial\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\JFL Project\Framework-Sonar\Sonar-tutorial\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\JFL Project\Framework-Sonar\Sonar-tutorial\obj\Debug\WebApplication1.dll
