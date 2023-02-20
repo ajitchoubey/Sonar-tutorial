@@ -96,27 +96,6 @@
           }
         },
         {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/JFL%20Project/SonarPOC/Sonar-tutorial/Program.cs",
-                "region": {
-                  "startLine": 60,
-                  "startColumn": 13,
-                  "endLine": 60,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S1118",
           "level": "warning",
           "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
@@ -129,6 +108,27 @@
                   "startColumn": 11,
                   "endLine": 6,
                   "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/JFL%20Project/SonarPOC/Sonar-tutorial/Program.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 13,
+                  "endLine": 60,
+                  "endColumn": 34
                 }
               }
             }
