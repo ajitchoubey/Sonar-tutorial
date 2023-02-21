@@ -7,7 +7,7 @@ node {
         
         withSonarQubeEnv('SonarServer') {
           bat "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe begin /k:POSDemotest"
-          bat 'MSBuild.exe "C:/JFL Project/POSDemo/Sonar-tutorial/JublFood.POS.App.sln" /t:Rebuild'
+          bat 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\MSBuild.exe "C:/JFL Project/POSDemo/Sonar-tutorial/JublFood.POS.App.sln" /t:Rebuild'
           bat "${MSBUILD_SQ_SCANNER_HOME}\\SonarQube.Scanner.MSBuild.exe end"
         }
      }
