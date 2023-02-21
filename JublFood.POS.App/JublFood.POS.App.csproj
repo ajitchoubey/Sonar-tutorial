@@ -194,7 +194,7 @@
       <DependentUpon>frmCashDrop.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCashRegister.cs">
-		<SubType>Form</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCashRegister.Designer.cs">
       <DependentUpon>frmCashRegister.cs</DependentUpon>
@@ -229,8 +229,8 @@
     <Compile Include="frmGSTEntry.Designer.cs">
       <DependentUpon>frmGSTEntry.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLockUnlockCashDrawer.cs" >
-		<SubType>Form</SubType>
+    <Compile Include="frmLockUnlockCashDrawer.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLockUnlockCashDrawer.Designer.cs">
       <DependentUpon>frmLockUnlockCashDrawer.cs</DependentUpon>
