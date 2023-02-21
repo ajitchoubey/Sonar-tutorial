@@ -730,7 +730,6 @@
     <EmbeddedResource Include="UserControls\UC_KeyBoardNumeric.resx">
       <DependentUpon>UC_KeyBoardNumeric.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Jenkins-1" />
     <None Include="log4net.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
